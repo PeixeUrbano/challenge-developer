@@ -3,23 +3,22 @@
 Olá!
 
 Primeiramente agradecemos sua disponibilidade para o nosso desafio.
-Como parte do processo seletivo do Peixe Urbano, gostaríamos que resolvesse um pequeno desafio e conforme seu desempenho daremos continuidade ao processo.
+Como parte do processo seletivo do Peixe Urbano, gostaríamos que resolvesse um desafio técnico e conforme seu desempenho daremos continuidade ao processo.
 
-Durante o desenvolvimento dê preferência para implementação em Java.<br>
-O objetivo é avaliar como você vai desenvolver o código em termos de:
+Durante o desenvolvimento de preferência para implementação em Java. O objetivo é avaliar como será o desenvolvimento do código-fonte em termos de:
 
 - Clareza e qualidade de código
 - Arquitetura e organização do projeto
 - Cobertura de testes
-- Conhecimento na linguagem Java.
+- Conhecimento na linguagem Java
 
 Observação:
 - Seria interessante a solução ser executada em algum container web
 - Sinta-se à vontade para utilizar qualquer tipo de framework
 - Utilize um mecanismo de persistência aderente a solução
-- **Bonus:** Deploy da aplicação em ambiente AWS
+- **Bônus:** Deploy da aplicação em ambiente AWS
 
-Crie um projeto em seu Github para que vejamos os passos feitos através dos commits para resolver o desafio, descreva as intruções de uso através do READE.md, caso acredite ser necessário.
+Crie um projeto em seu Github para vermos os passos feitos através dos commits para resolver o desafio, descreva as instruções de uso através do READE.md, caso acredite ser necessário.
 
 Qualquer dúvida maior pode nos perguntar, mas no geral, divirta-se!
 
@@ -55,7 +54,7 @@ Frigideira Cerâmica Titânio Titanium: Tamanho 20cm, 24cm ou 28cm.
 2. Tamanho 24cm - R$ 149,90 por R$ 129,90
 3. Tamanho 28cm - R$ 169,90 por R$ 139,90
 
-Realize a modelagem de dados e a implementação em Java do caso de uso proposto, do qual pode ser gradualmente desenvolvido:
+Realize a modelagem de dados e a implementação do caso de uso proposto, do qual pode ser gradualmente desenvolvido:
 
 1. Modelagem e persistência de dados
 2. Interface gráfica para inserir uma oferta
