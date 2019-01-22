@@ -84,7 +84,7 @@ Realize a modelagem de dados e a implementação do caso de uso proposto, do qua
 
 #### Opções de compra
 
-1. Assim como a oferta, toda opção de compra tem uma data de publicação (startDate) e data de retirada do ar (endDate).
+1. Assim como a oferta, toda opção de compra tem uma data de publicação (_startDate_) e data de retirada do ar (_endDate_).
 2. Quando realizamos o cadastro de uma opção de compra, informamos o valor de mercado praticado (_normalPrice_), o percentual de desconto (caso se aplique, _percentageDiscount_) e consequentemente já armazenando o valor de venda (_salePrice_) para o usuário.
 3. Inicialmente cada opção de compra tem uma determinada "quantidade de estoque" (_quantityCupom_), exemplo: OP-1 tem 100 cupons disponíveis, OP-2 tem 30 cupons disponíveis; ao realizar "a venda" através de uma opção de compra, realizamos o decremento da quantidade de cupons da opção selecionada e incrementamos a quantidade global vendida na oferta.
 4. Uma opção de compra pode se esgotar e estar indisponível para a compra, mas a oferta pode permanecer no ar com outras opção de compra válidas e com "estoque disponível". Caso todas as opções de compra se esgotem, a oferta é totalmente esgotada e desabilitada para a compra.
