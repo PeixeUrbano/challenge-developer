@@ -5,7 +5,8 @@ Olá!
 Primeiramente agradecemos sua disponibilidade para o nosso desafio.
 Como parte do processo seletivo do Peixe Urbano, gostaríamos que resolvesse um desafio técnico e conforme seu desempenho daremos continuidade ao processo.
 
-Durante o desenvolvimento de preferência para implementação em Java, mas caso queira implementar utilizando uma linguagem funcional como Scala, sinta-se a vontade.<br>
+Durante o desenvolvimento de preferência para implementação em Java, mas caso queira implementar utilizando uma linguagem funcional como Scala, sinta-se a vontade.
+
 O **objetivo é avaliar como será o desenvolvimento** do código-fonte em termos de:
 
 1. Clareza e qualidade de código.
@@ -16,7 +17,7 @@ O **objetivo é avaliar como será o desenvolvimento** do código-fonte em termo
 
 Observação:
 
-- Foque de forma direta na resolução do problema, entregue os requisitos levando em conta boas práticas de programação.
+- Foque de forma direta na resolução do problema, entretanto, entregue os requisitos levando em conta boas práticas de programação.
 - Seria interessante a solução ser executada em algum container web.
 - Sinta-se à vontade para utilizar qualquer tipo de framework.
 - Utilize um mecanismo de persistência SQL ou NoSQL.
