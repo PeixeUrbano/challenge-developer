@@ -5,21 +5,22 @@ Olá!
 Primeiramente agradecemos sua disponibilidade para o nosso desafio.
 Como parte do processo seletivo do Peixe Urbano, gostaríamos que resolvesse um desafio técnico e conforme seu desempenho daremos continuidade ao processo.
 
-Durante o desenvolvimento de preferência para implementação em Java.<br>
+Durante o desenvolvimento de preferência para implementação em Java, mas caso queira implementar utilizando uma linguagem funcional como Scala, sinta-se a vontade.<br>
 O **objetivo é avaliar como será o desenvolvimento** do código-fonte em termos de:
 
-1. Clareza e qualidade de código
-2. Arquitetura e organização do projeto
-3. Cobertura de testes
-4. Conhecimento na linguagem Java
+1. Clareza e qualidade de código.
+2. Arquitetura e organização do projeto.
+3. Princípios e boas práticas de design e implementação.
+4. Cobertura de testes.
+5. Conhecimento em linguagem Java ou Scala.
 
 Observação:
 
-- Foque de forma direta na resolução do problema, entregue os requisitos
-- Seria interessante a solução ser executada em algum container web
-- Sinta-se à vontade para utilizar qualquer tipo de framework
-- Utilize um mecanismo de persistência aderente a solução
-- **Bônus:** Deploy da aplicação em ambiente AWS
+- Foque de forma direta na resolução do problema, entregue os requisitos levando em conta boas práticas de programação.
+- Seria interessante a solução ser executada em algum container web.
+- Sinta-se à vontade para utilizar qualquer tipo de framework.
+- Utilize um mecanismo de persistência SQL ou NoSQL.
+- **Bônus:** Deploy da aplicação em ambiente AWS.
 
 Crie um projeto em seu Github para vermos os passos feitos através dos commits para resolver o desafio, descreva as instruções de uso através do READE.md, caso acredite ser necessário.
 
@@ -37,7 +38,7 @@ Ao longo dos anos, o Peixe Urbano vem evoluindo seu modelo de negócios, simplif
 
 Atualmente precisamos de uma plataforma web de vantagens simplificada do qual conta com a publicação de ofertas e suas respectivas opções de compra, representado pelo seguinte diagrama de classes:
 
-![alt text](./UML-Model.png) 
+![alt text](./UML-Model-2.png) 
 
 | Deal (oferta)  | BuyOption (Opção de compra)  |
 |---|---|
@@ -45,7 +46,7 @@ Atualmente precisamos de uma plataforma web de vantagens simplificada do qual co
 | Texto de destaque | Preço de venda normal  |
 | Data de criação | Preço de venda com desconto  |
 | Data de publicação | Percentual de desconto |
-| Validade da oferta (em dias) | Quantidade de cupons |
+| Validade da oferta (em dias) | Quantidade total de cupons disponíveis |
 | URL da oferta | Data de entrada |
 | Total geral de cupons vendidos | Data de saída | 
 | Tipo (local, produto, viagem) |  |
@@ -67,19 +68,20 @@ Frigideira de Alumínio com Revestimento Cerâmico de 20cm, 24cm ou 28cm.
 
 Realize a modelagem de dados e a implementação do caso de uso proposto, do qual pode ser gradualmente desenvolvido:
 
-1. Modelagem e persistência de dados
-2. Interface gráfica para inserir uma oferta
-3. Interface gráfica para inserir uma opção de compra
-4. Interface gráfica para associar as opções de compra na oferta selecionada
-5. Exibição de uma oferta e suas opções de compra (veja figura 1)
-6. Processar a "venda" de uma determinada opção de compra e realizar a atualização dos itens vendidos e seus totais
+1. Arquitetura da aplicação web e todos os mecanismos envolvidos para suportar o desenvolvimento.
+2. Modelagem e persistência de dados.
+3. Interface gráfica para inserir uma oferta.
+4. Interface gráfica para inserir uma opção de compra.
+5. Interface gráfica para associar as opções de compra na oferta selecionada.
+6. Exibição de uma oferta e suas opções de compra (veja figura 1).
+7. Processar a "venda" de uma determinada opção de compra e realizar a atualização dos itens vendidos e seus totais.
 
 **Maiores detalhes de regras de negócios**
 
 #### Oferta
 
 1. Para ser uma oferta válida, ou seja, que esteja publicada no website ela respeita a data de publicação (_publishDate_) que é quando a oferta entra efetivamente no ar e futuramente não é mais exibida quando atinge a data de saída (_endDate_).
-2. É realizado um controle global de quantos itens já foram vendidos de determinada oferta pelo campo _"totalSold"_.
+2. É realizado um controle global de quantos itens já foram vendidos de determinada oferta pelo campo _"totalSold"_. Esse campo é a soma total da quantidade vendida de todas as opções de compra da oferta.
 3. Para cada oferta cadastrada geramos um link (_url_) baseado em seu nome, que representa o slug para acessar a mesma dentro do website, esse slug é único.
 
 #### Opções de compra
